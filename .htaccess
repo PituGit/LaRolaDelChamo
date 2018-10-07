@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "La Rola del Chamo
+AuthUserFile /home/TDIW/tdiw-e6/public_html/.htpasswd
+Require valid-user

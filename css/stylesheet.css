@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+body#fondo{
+    /*background-image:url("../img/fondo.png");*/
+    background: white;
+}
+
+body#fondo2{
+    background: white;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: darkgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    float: left;
+    border-right: 1px solid black;
+}
+
+nav li ul{
+    display:none;
+    position:absolute;
+} 
+
+nav li:hover > ul{
+    display:inline-block;
+    position: absolute;
+}
+
+/*nav li:last-child{
+    border-right:  none;
+}*/
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: darkblue;
+}
+
+.active{
+    background-color: lightblue;
+}
+
+.categories{
+    display:grid;
+    height:100vh;
+    margin:6%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; 
+    grid-gap: 20px; /*separacion entre celdas*/
+    align-content:center; /*centramos el contenido de cada celda*/
+
+}
+
+.category{
+    background: lightskyblue/* white*/;
+    padding:10px;
+    text-align:center;
+    border-radius:11%;
+    font-family: 'Courgette', cursive;
+    }
+
+.category a{
+    color:red;
+    font-style: oblique;
+    text-decoration:none;/*para quitarle la linea de los enlaces*/
+}
+
+.category img{
+    /*Para que la imagen de la categoria se adapte al tamaño del grip*/
+    width:auto;
+    height:90%;
+}
+
+footer{
+    font-family: fantasy;
+    color:black;
+}
+
+form{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login{
+    display:grid;
+    grid-template-columns: 100%;
+    margin: 15%;
+    
+}
+
+form a{
+    color: blue;
+    font-style: italic;
+    text-decoration: none;
+    
+}
+
+.register{
+    display:grid;
+    grid-template-columns: 100%;
+    margin: 15%;
+}
