@@ -8,21 +8,28 @@ body#fondo2{
     background: white;
 }
 
+/* Permite que la barra de navegación se quede
+   estatica en la parte superior al hacer scroll */
+nav.sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+}
+
 nav ul{
     list-style: none;
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: darkgray;
-    position: fixed;
-    top: 0;
+    background-color: black;
     width: 100%;
 }
 
 nav li{
     display: inline;
     float: left;
-    border-right: 1px solid black;
+    border-right: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
 }
 
 nav li ul{
@@ -33,11 +40,12 @@ nav li ul{
 nav li:hover > ul{
     display:inline-block;
     position: absolute;
+    background:black;
 }
 
-/*nav li:last-child{
-    border-right:  none;
-}*/
+nav li:last-child{
+    /*border-right:  none;*/ /*  ¿como queda mejor? */
+}
 
 nav li a{
     display: block;
@@ -45,6 +53,7 @@ nav li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav li a:hover{
@@ -59,9 +68,11 @@ nav li a:hover{
     display:grid;
     height:100vh;
     margin:6%;
+    padding-top: 7%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%; 
-    grid-gap: 20px; /*separacion entre celdas*/
+    grid-template-rows: 40% 40% 10% 10%; 
+    grid-column-gap: 20px; /*separacion entre columnas*/
+    grid-row-gap:40px; /*separacion entre filas*/
     align-content:center; /*centramos el contenido de cada celda*/
 
 }
@@ -89,6 +100,8 @@ nav li a:hover{
 footer{
     font-family: fantasy;
     color:black;
+    float: right;
+    margin-bottom: 5px; 
 }
 
 form{
@@ -120,10 +133,11 @@ form a{
 }
 
 .logo{
+    
     display: block;
     margin: 0 auto;
     height: 30%;
     width: 30%;
-    padding-top: 90px;
-    padding-bottom: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
